@@ -10,10 +10,8 @@ import Signin from "./Homepage/Signin";
 import Home from "./Admin/Home";
 import Station from "./Homepage/Station";
 import EditMech from "./Admin/EditMech";
-// import StationReg from './Homepage/StationReg';
 import { useState } from "react";
 import MainStat from "./Station/MainStat";
-import Navbar from "./Station/Navbar";
 import About from "./Homepage/About";
 import Contact from "./Homepage/Contact";
 import SlotEdit from "./Station/SlotEdit";
@@ -35,7 +33,7 @@ import ViewReply from "./Homepage/ViewReply";
 import Trip from "./Homepage/Trip";
 import ForgotPassword from "./Homepage/ForgotPassword";
 import ResetPassword from "./Homepage/ResetPassword";
-// import Register from './Ev/Register';
+
 
 import StationIndDashboard from "./StationIndividual/StationIndDashboard";
 import SlotHistory from "./StationIndividual/SlotHistory";
@@ -63,7 +61,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
               <Route path="/reset-password/:token" element={<ResetPassword />} />
-              {/* <Route path='/reg' element={<Register/>}/> */}
+        
             </Routes>
           </>
         ) : auth.usertype == 3 ? (
